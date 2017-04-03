@@ -1,0 +1,12 @@
+applications:
+- path: target/JavaHelloWorldApp.war
+  memory: 512M
+  instances: 1
+  domain: mybluemix.net
+  name: Lab5-Talent-Manager
+  host: Lab5-Talent-Manager
+  disk_quota: 1024M
+  services:
+  - Personality Insights-ot
+  - Cloudant NoSQL DB-ge
+  buildpack: java_buildpack
